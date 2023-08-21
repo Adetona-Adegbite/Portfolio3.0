@@ -57,8 +57,7 @@ export default function HomeBody() {
     <div className={classes.body}>
       <div className={classes.left}>
         <motion.div
-          drag
-          dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
+         
           className={classes["left-container"]}
         >
           <span>
