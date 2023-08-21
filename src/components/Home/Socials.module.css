@@ -1,0 +1,19 @@
+.socials {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  margin: auto;
+  color: white;
+  font-size: 2rem;
+  padding-bottom: 40px;
+}
+.socials a{
+  color: white;
+}
+@media (max-width: 768px) {
+  .socials{
+    font-size: 1.4rem;
+    position:relative;
+    left:4%
+  }
+}

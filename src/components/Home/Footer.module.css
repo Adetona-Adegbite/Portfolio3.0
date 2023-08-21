@@ -1,0 +1,35 @@
+.footer {
+  width: 100%;
+  background: #000;
+  color: gray;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 30px 0 10px 0;
+  margin-top: 40px;
+}
+
+.socials {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.socials * {
+  color: gray;
+  transition: 0.5s ease-in-out;
+}
+.socials *:hover {
+  color: white;
+}
+.copyright {
+  text-align: center;
+  justify-self: flex-end;
+}
+@media (max-width: 768px) {
+    .footer{
+        width: 100vw;
+    }
+}

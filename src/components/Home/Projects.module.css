@@ -1,0 +1,127 @@
+.projects {
+  width: 80%;
+  margin: auto;
+  color: white;
+  list-style: none;
+  padding: 0 30px;
+  border: 1px solid rgba(244, 244, 244, 0.24);
+  box-shadow: rgba(244, 244, 244, 0.24) 0px 3px 8px;
+
+  border-radius: 10px;
+}
+.header {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  font-weight: 300;
+}
+
+.project {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  /* padding: 10px 20px; */
+  height: 500px;
+  /* border: 1px solid white; */
+}
+.project h2 {
+  font-size: 1.5rem;
+}
+.image {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  perspective: 10000;
+}
+.image img {
+  width: 40vw;
+  height: 400px;
+  box-shadow: rgba(244, 244, 244, 0.24) 20px 20px 50px;
+  transform: skew(1deg), rotate(-3deg);
+  border: 1px solid rgba(244, 244, 244, 0.24);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* @keyframes identifier {
+  0% {
+    transform: translateY(-0px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+} */
+/* .shadow {
+  width: 60px;
+  height: 30px;
+  background: rgba(199, 197, 197, 0.3);
+  transform: translate(-50%, -50%);
+  margin: 40px auto;
+  position: relative;
+  left: 5%;
+  border-radius: 50%;
+  filter: blur(3px);
+} */
+
+.info {
+  flex: 2;
+  height: 50%;
+  padding: 0 20px;
+}
+
+.projectOdd {
+  flex-direction: row;
+  transform: skew(-1deg), rotate(3deg);
+}
+
+.projectEven {
+  flex-direction: row-reverse;
+}
+.progress {
+  height: 5px;
+  background: hsl(186, 75%, 42%);
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  transform-origin: 0%;
+}
+/* .progress-info {
+  display: flex;
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  left: 0;
+} */
+@media (max-width:768px) {
+  .header{
+    font-size: 1.7rem;
+  }
+  .projects{
+     position:relative;
+    left:4%;
+    height: fit-content;
+  }
+  .info h2{
+    font-size: 1.3rem;
+  }
+  .info{
+    flex: 0;
+  }
+  .project{
+    flex-direction:column;
+    justify-content: center;
+     position:relative;
+     height: fit-content;
+    left:4%
+  }
+  .project img{
+    width: 80%;
+    height: 200px;
+    margin-top: 10px;
+  }
+  .image{
+    flex:0;
+  }
+}

@@ -1,0 +1,66 @@
+.body {
+  padding-bottom: 30px;
+}
+
+.list {
+  width: 35%;
+  margin: auto;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center; */
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  background: hsl(186, 75%, 42%);
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.item {
+  width: 90%;
+  background: white;
+  list-style: none;
+  margin: 4px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.icon {
+  position: relative;
+  top: 3px;
+  font-size: 1.5rem;
+}
+.header {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  font-weight: 300;
+}
+@media (max-width: 768px) {
+  .body{
+    text-align:center;
+
+  }
+  .header{
+    font-size: 1.7rem;
+     position:relative;
+    left:4%
+  }
+  .list{
+    width: 100%;
+    margin: auto;
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  }
+  .list p{
+  font-size: 1rem;
+
+  }
+  .item{
+  }
+}

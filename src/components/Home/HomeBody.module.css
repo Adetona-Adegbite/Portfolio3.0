@@ -1,0 +1,210 @@
+:root {
+  --glow-color: hsl(186, 75%, 42%);
+}
+.body {
+  width: 100vw;
+  display: flex;
+  height: 70vh;
+  padding: 60px 0;
+  overflow: hidden;
+}
+.left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.left-container {
+  width: fit-content;
+  height: 60vh;
+  margin: auto auto auto 30px;
+  text-align: center;
+  padding: 4px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  cursor: grab;
+  /* background: #000;
+  z-index: 2; */
+}
+.left-container::before {
+  content: "";
+  position: absolute;
+  width: 1000px;
+  height: 10000px;
+  background: conic-gradient(transparent, transparent, transparent, #d400d4);
+  animation: rotate 4s 2s infinite ease-in-out;
+}
+.left-container span {
+  /* background: -moz-linear-gradient(
+    top,
+    #1e5799 0%,
+    #2989d8 50%,
+    #207cca 51%,
+    #7db9e8 100%
+  ); */
+  height: 100%;
+  /* background: #002d62; */
+  background: #000;
+  color: white;
+  z-index: 2;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.left-container::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 100000px;
+  background: conic-gradient(
+    transparent,
+    transparent,
+    transparent,
+    var(--glow-color)
+  );
+  animation: rotate 4s 3s infinite ease-in-out;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+.left-container h1 {
+  font-size: 4rem;
+  font-weight: 250;
+}
+.left-container p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.right-container {
+  width: 60%;
+  height: 80%;
+  margin: auto;
+  background: rgb(229, 229, 229);
+  border-radius: 50%;
+  position: relative;
+  color: white;
+}
+.profile {
+  width: 100%;
+  height: 100%;
+}
+.profile img {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  border-radius: 50%;
+}
+
+.buttons button {
+  padding: 17px 40px;
+  margin: 10px;
+  font-size: 1.5rem;
+  border-radius: 0.45em;
+  transition: 0.5s ease-in;
+}
+.button1 {
+  outline: none;
+  color: black;
+
+  cursor: pointer;
+  border-radius: 0.45em;
+  background: white;
+}
+.button1:hover {
+  background: rgb(212, 212, 212);
+}
+.buttons .button2 {
+  outline: none;
+  color: white;
+  cursor: pointer;
+  border: 0.1em solid var(--glow-color);
+  border-radius: 0.45em;
+  background: none;
+  perspective: 2em;
+  -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+}
+.button2:hover {
+  -webkit-box-shadow: inset 0px 0px 2em 0px var(--glow-color),
+    0px 0px 2em 0px var(--glow-color);
+  -moz-box-shadow: inset 0px 0px 2em 0px var(--glow-color),
+    0px 0px 2em 0px var(--glow-color);
+  box-shadow: inset 0px 0px 2em 0px var(--glow-color),
+    0px 0px 2em 0px var(--glow-color);
+  background: hsl(186, 91%, 55%);
+}
+.right-container h1 {
+  margin-top: 0;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .body {
+    flex-direction: column-reverse;
+    height:fit-content;
+    justify-content:center;
+    width: 100%;
+    overflow:hidden;
+    margin: auto;
+  }
+  .right {
+    width: 100%;
+    height: 300px;
+    margin: auto auto auto 20px;
+    text-align: center;
+    
+  }
+  .right-container {
+    width: 90%;
+    height: 100%;
+  }
+  .left{
+    width: 100%;
+    height: fit-content;
+    margin: 70px auto auto auto;
+  }
+  .left h1{
+    font-size: 1.7rem;
+  }
+  .left p{
+    font-size: 1rem;
+  }
+  .left span{
+    height: auto;
+  }
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+  }
+  .buttons button{
+      padding: 7px 15px;
+  font-size: 1.2rem;
+  }
+  .left-container{
+    height: fit-content;
+  }
+}
