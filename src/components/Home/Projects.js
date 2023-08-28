@@ -95,7 +95,7 @@ const projects = [
     },
   },
   {
-    img: image8,
+    img: image10,
     info: {
       title: "Chat App",
       description:
