@@ -6,6 +6,8 @@ import image5 from "../../assets/images/5.jpg";
 import image6 from "../../assets/images/6.jpg";
 import image7 from "../../assets/images/7.jpg";
 import image8 from "../../assets/images/8.jpg";
+import image9 from "../../assets/images/9.jpg";
+import image10 from "../../assets/images/10.jpg";
 
 import classes from "./Projects.module.css";
 import { motion, useScroll } from "framer-motion";
@@ -81,6 +83,24 @@ const projects = [
       description:
         "This is another React App that simulates a restaurant app that shows you their menu and allows to place orders by adding to cart. It uses concepts such as React-Redux, Portals and Fragments. It is also linked to a simple Firebase Backend",
       repo: "adetona-adegbite.github.io/Food-Order",
+    },
+  },
+  {
+    img: image9,
+    info: {
+      title: "Chat Ai App",
+      description:
+        "This is a React App that uses the OpenAI API to allow interactions with ChatGPT 3.5 Turbo. This project helped me to understand how OpenAI API's work and also helped me to start reading the documentation of the tools I use considering that I only used the documentation to create this",
+      repo: "adetona-adegbite.github.io/Tona-Ai",
+    },
+  },
+  {
+    img: image8,
+    info: {
+      title: "Chat App",
+      description:
+        "I built this using React and Firebase. It's primary focus is the functionality and not the design. It is an App that authenticates you with google and enables you to join a room and chat in Realtime with other people in the room. It uses the universal-cookies library to store cookies.",
+      repo: "adetona-adegbite.github.io/chat-v1",
     },
   },
 ];
