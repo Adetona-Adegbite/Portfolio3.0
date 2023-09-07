@@ -8,6 +8,8 @@ import image7 from "../../assets/images/7.jpg";
 import image8 from "../../assets/images/8.jpg";
 import image9 from "../../assets/images/9.jpg";
 import image10 from "../../assets/images/10.jpg";
+import image11 from "../../assets/images/12.jpg";
+import image12 from "../../assets/images/11.jpg";
 
 import classes from "./Projects.module.css";
 import { motion, useScroll } from "framer-motion";
@@ -101,6 +103,24 @@ const projects = [
       description:
         "I built this using React and Firebase. It's primary focus is the functionality and not the design. It is an App that authenticates you with google and enables you to join a room and chat in Realtime with other people in the room. It uses the universal-cookies library to store cookies.",
       repo: "adetona-adegbite.github.io/chat-v1",
+    },
+  },
+  {
+    img: image11,
+    info: {
+      title: "Voice to Text",
+      description:
+        "I built this using React. It's relatively simple to make and use. It records your voice and converts it to text, enabling you to later then copy the text and use it however you want.",
+      repo: "adetona-adegbite.github.io/voice-to-text",
+    },
+  },
+  {
+    img: image12,
+    info: {
+      title: "Chat App V2",
+      description:
+        "This was made with React and Socket.io. It uses sockets to establish connections with different users and enables them to send messages to each other in Realtime",
+      repo: "adetona-adegbite.github.io/chat-v2",
     },
   },
 ];
